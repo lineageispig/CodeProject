@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>The map api challenge</title>
+    <link href="css/style42.css" type="text/css" rel="stylesheet">
+          <!--  <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> -->
+   
+    <script type="text/javascript" src="js/map.js"></script>
+   </head>
+<body>
+    <!-- Top menu -->
+	<!--<nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation"> -->
+<div class="container">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="top-navbar-1">          
+    <!-- status display json link --> 
+     <button onclick="mFunction()">distance of JSON</button> 
+     <button onclick="SFunction()">Starting point of JSON</button> 
+     <button onclick="EFunction()">Ending point of JSON</button> 
+   </div>
+</div> 
+<div class="col-md-12">      
+  <div class="map1">
+    <h1>Type the starting point, ending point and press enter</h1>    
+    <form id="addressForm"> 
+    <input type="text" class="controls" name="address" id="origin-input" placeholder="Enter a starting address" />
+    <input type="text" class="controls" name="address2" id="destination-input" placeholder="Enter an ending address" /> 
+    </form>   
+  </div>
+</div>
+<div id="right-panel">
+</div> 
+<div id="output"></div> 
+<div id="map"></div>
+<div class="result"></div> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS-ue65Jx_HySaXRqnMehRbg67cMCL_xM&libraries=places&callback=initAutocomplete"
+    async defer></script> 
+</body>
+</html>
